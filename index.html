@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ALYZ TOOLS</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<section id="loginView" class="view">
+  <div class="login-card card">
+    <h1 class="logo">ALYZ TOOLS</h1>
+    <p class="sub">MASUK UNTUK MELANJUTKAN</p>
+    <input id="username" class="input" type="text" placeholder="@alyzganteng" autocomplete="off" autocapitalize="off" spellcheck="false">
+    <div id="loginError"></div>
+    <button id="btnLogin" class="btn">LOGIN</button>
+    <button id="btnGuest" class="btn btn-light">GUEST</button>
+    <button id="btnGoogle" class="btn btn-light">GOOGLE</button>
+  </div>
+</section>
+
+<section id="appView" class="view" style="display:none">
+  <header class="topbar"><span class="logo-sm">ALYZ TOOLS</span></header>
+
+  <main class="content">
+    <div id="tabTools" class="tab">
+      <h2 class="title">TOOLS</h2>
+      <div class="grid" id="toolGrid"></div>
+    </div>
+
+    <div id="tabChat" class="tab" style="display:none">
+      <h2 class="title">CHAT GLOBAL</h2>
+      <div id="chatBox" class="chatbox"></div>
+      <div class="row">
+        <input id="chatInput" class="input" type="text" placeholder="Tulis pesan..." autocomplete="off">
+        <button id="chatSend" class="btn btn-inline">KIRIM</button>
+      </div>
+    </div>
+
+    <div id="tabProfil" class="tab" style="display:none">
+      <h2 class="title">PROFIL</h2>
+      <div class="card">
+        <p class="label">USERNAME</p>
+        <p id="profName" class="big"></p>
+      </div>
+      <button id="btnLogout" class="btn" style="margin-top:18px">LOGOUT</button>
+    </div>
+  </main>
+
+  <div id="toolBody" class="toolbody" style="display:none"></div>
+
+  <nav class="bottom-nav">
+    <button class="nav-btn active" data-tab="tools">TOOLS</button>
+    <button class="nav-btn" data-tab="chat">CHAT</button>
+    <button class="nav-btn" data-tab="profil">PROFIL</button>
+  </nav>
+</section>
+
+<script type="module" src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+export function openAppGeneratorTool(body){ body.innerHTML=`<button id="back">← KEMBALI</button><h3>APP GENERATOR</h3><div style="border:2px solid #000;padding:12px;border-radius:8px;margin-top:10px;font-weight:900">FITUR BELUM TERSEDIA</div>`; body.querySelector('#back').onclick=()=>{body.style.display='none';body.innerHTML=''}; }
